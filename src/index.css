@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-border {
+    border: 2px solid #e53e3e; /* Replace with your desired border color */
+  }
+
+  .div-container{
+    @apply w-full bg-slate-200 mx-auto mt-1 p-1 rounded-md shadow-md
+  }
+  .form-tab-css{
+    @apply flex flex-wrap pl-2 space-y-2;
+
+    
+  } 
+  .div-label-field{
+    @apply  my-1 mx-8 flex   justify-between w-full md:w-1/2 lg:w-1/3 xl:w-1/4
+  }
+  .label-css{
+    @apply inline-block w-[400px]   text-[20px] m-0 font-semibold text-gray-600
+  }
+
+  .input-tag-css{
+    @apply w-full p-0 h-[28px] text-[16px] border focus:outline-none focus:border-blue-500
+  }
+}
